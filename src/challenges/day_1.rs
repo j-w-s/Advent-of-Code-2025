@@ -70,7 +70,7 @@ Analyze the rotations in your attached document. What's the actual password to o
 // 0 => LR68 = (99-68) = 31 => L30 = (31-30) = 1 => R48 = (1+48) = 49 => ... etc
 // note: read this as 0, not 50, but i'm too lazy to change it. it stands
 // so we need to read in the file and just perform the necessary operations, wrapping
-// around range [0,99] via mod
+// around range [0,99] via mod 100
 
 struct Dial {
     pointer: i16,
@@ -102,7 +102,6 @@ impl Turn for Dial {
                 continue;
             }
 
-            // parse the rotation command (direction and distance)
             let direction = rotation_line.chars().next().unwrap();
             let distance: i16 = rotation_line[1..].parse().unwrap();
 

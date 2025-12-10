@@ -122,5 +122,5 @@ fn main() {
         }
     }
 
-    println!("Sum: {}", counter.sum);
+    println!("sum: {}", counter.sum);
 }
