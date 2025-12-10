@@ -66,7 +66,6 @@ Following these rotations would cause the dial to move as follows:
 Because the dial points at 0 a total of three times during this process, the password in this example is 3.
 Analyze the rotations in your attached document. What's the actual password to open the door?
 */
-use std::str::Lines;
 
 // 0 => LR68 = (99-68) = 31 => L30 = (31-30) = 1 => R48 = (1+48) = 49 => ... etc
 // note: read this as 0, not 50, but i'm too lazy to change it. it stands
