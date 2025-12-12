@@ -85,7 +85,7 @@ trait Turn {
 impl Turn for Dial {
     fn left(&mut self, distance: i16) {
         let distance = distance % 100;
-        self.pointer = ((self.pointer - distance) % 100 + 100) % 100;
+        self.pointer = (self.pointer + distance) % 100; 
     }
 
     fn right(&mut self, distance: i16) {
